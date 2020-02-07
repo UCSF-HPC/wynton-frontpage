@@ -20,65 +20,6 @@
 <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js@ver=1.4.1'></script>
 <script type='text/javascript' src='wp-content/themes/streamline-pro/js/responsive-menu.js@ver=1.0.0'></script>
 
-<!-- This site uses the Open External Links in a New Window plugin v1.4 by WebFactory Ltd. Download it for free at https://wordpress.org/extend/plugins/open-external-links-in-a-new-window/ -->
-<script type="text/javascript">//<![CDATA[
-  function external_links_in_new_windows_loop() {
-    if (!document.links) {
-      document.links = document.getElementsByTagName('a');
-    }
-    var change_link = false;
-    var force = '';
-    var ignore = '';
-
-    for (var t=0; t<document.links.length; t++) {
-      var all_links = document.links[t];
-      change_link = false;
-      
-      if(document.links[t].hasAttribute('onClick') == false) {
-        // forced if the address starts with http (or also https), but does not link to the current domain
-        if(all_links.href.search(/^http/) != -1 && all_links.href.search('wynton.ucsf.edu') == -1 && all_links.href.search(/^#/) == -1) {
-          // console.log('Changed ' + all_links.href);
-          change_link = true;
-        }
-          
-        if(force != '' && all_links.href.search(force) != -1) {
-          // forced
-          // console.log('force ' + all_links.href);
-          change_link = true;
-        }
-        
-        if(ignore != '' && all_links.href.search(ignore) != -1) {
-          // console.log('ignore ' + all_links.href);
-          // ignored
-          change_link = false;
-        }
-
-        if(change_link == true) {
-          // console.log('Changed ' + all_links.href);
-          document.links[t].setAttribute('onClick', 'javascript:window.open(\''+all_links.href+'\'); return false;');
-          document.links[t].removeAttribute('target');
-        }
-      }
-    }
-  }
-  
-  // Load
-  function external_links_in_new_windows_load(func)
-  {  
-    var oldonload = window.onload;
-    if (typeof window.onload != 'function'){
-      window.onload = func;
-    } else {
-      window.onload = function(){
-        oldonload();
-        func();
-      }
-    }
-  }
-
-  external_links_in_new_windows_load(external_links_in_new_windows_loop);
-  //]]></script>
-
 <link rel="pingback" href="https://wynton.ucsf.edu/xmlrpc.php" />
 <meta itemprop="name" content="Wynton" />
 <meta itemprop="url" content="https://wynton.ucsf.edu/" />
@@ -265,10 +206,10 @@ max-width: 750px;}}
 <body class="home page-template-default page page-id-6 custom-header content-sidebar genesis-breadcrumbs-hidden streamline-pro-home" itemscope itemtype="https://schema.org/WebPage"><div id="ucsf-banner-nav" class="grey">
       <div class="top-header-container row">
           <ul class="menu">
-            <li class="first"><a href="https://www.ucsf.edu">University of California San Francisco</a></li>
-            <li><a href="https://www.ucsfhealth.org/">UCSF Medical Center</a></li>
-            <li><a href="https://www.ucsf.edu/search" title="">Search UCSF</a></li>
-            <li><a href="https://www.ucsf.edu/about">About UCSF</a></li>
+            <li class="first"><a href="https://www.ucsf.edu" target="_blank" rel="noopener noreferrer">University of California San Francisco</a></li>
+            <li><a href="https://www.ucsfhealth.org/" target="_blank" rel="noopener noreferrer">UCSF Medical Center</a></li>
+            <li><a href="https://www.ucsf.edu/search" target="_blank" rel="noopener noreferrer">Search UCSF</a></li>
+            <li><a href="https://www.ucsf.edu/about" target="_blank" rel="noopener noreferrer">About UCSF</a></li>
           </ul>
       </div>
     </div><div class="site-container"><header class="site-header" itemscope itemtype="https://schema.org/WPHeader"><div class="wrap"><div class="title-area"><h1 class="site-title" itemprop="headline"><a href="index.html">Wynton</a></h1><p class="site-description" itemprop="description">UCSF Research Computing at Scale</p></div><div class="widget-area header-widget-area">
@@ -292,11 +233,11 @@ max-width: 750px;}}
 </div>
 		</div></section>
 </div><div class="widget-area footer-widgets-2 footer-widget-area"><section id="text-3" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">ACKNOWLEDGEMENTS</h4>
-			<div class="textwidget"><p><a href="http://cbi.ucsf.edu/hpc/">HDFCCC Computing Core<br />
-</a><a href="https://itgov.ucsf.edu/">IT Governance, Cmte on Research Tech<br />
-</a><a href="https://memory.ucsf.edu">Memory and Aging Center<br />
-</a><a href="https://salilab.org/qb3cluster/FrontPage">QB3 Cluster<br />
-</a><a href="https://salilab.org/">Sali Lab<br />
+			<div class="textwidget"><p><a href="http://cbi.ucsf.edu/hpc/" target="_blank" rel="noopener noreferrer">HDFCCC Computing Core<br />
+</a><a href="https://itgov.ucsf.edu/" target="_blank" rel="noopener noreferrer">IT Governance, Cmte on Research Tech<br />
+</a><a href="https://memory.ucsf.edu" target="_blank" rel="noopener noreferrer">Memory and Aging Center<br />
+</a><a href="https://salilab.org/qb3cluster/FrontPage" target="_blank" rel="noopener noreferrer">QB3 Cluster<br />
+</a><a href="https://salilab.org/" target="_blank" rel="noopener noreferrer">Sali Lab<br />
 </a></p>
 </div>
 		</div></section>
