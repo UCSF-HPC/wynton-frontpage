@@ -1,0 +1,25 @@
+			@font-face {
+				font-family: 'helvetica-neue-light';
+				font-style: normal;
+				src: url('170613115044helvetica-neue-light.eot');
+				src: local('helvetica-neue-light'), url('170613115044helvetica-neue-light.eot') format('embedded-opentype'), url('170613115044helvetica-neue-light.woff') format('woff');
+			}
+            
+            .helvetica-neue-light{font-family: 'helvetica-neue-light' !important;}
+            
+					@font-face {
+				font-family: 'helvetica-neue-bold';
+				font-style: normal;
+				src: url('170613115527helvetica-neue-bold.eot');
+				src: local('helvetica-neue-bold'), url('170613115527helvetica-neue-bold.eot') format('embedded-opentype'), url('170613115527helvetica-neue-bold.woff') format('woff');
+			}
+            
+            .helvetica-neue-bold{font-family: 'helvetica-neue-bold' !important;}
+            
+						body{
+					font-family: 'helvetica-neue-light' !important;
+				}
+						h1{
+					font-family: 'helvetica-neue-bold' !important;
+				}
+		
