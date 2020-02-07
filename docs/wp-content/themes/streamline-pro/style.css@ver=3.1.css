@@ -966,7 +966,7 @@ Site Header
 
 .site-header {
 	/*background: #fff url(images/lines-vertical.png);*/
-	background: url("../../uploads/2017/06/Header-Interior.jpg") !important;
+	background: url("/assets/images/Header-Interior.jpg") !important;
 	background-size: 3px 1px;
 	box-shadow: 0 0 10px #222;
 	margin: 0 auto;
@@ -975,7 +975,7 @@ Site Header
 }
 
 .home .site-header{
-	background: url("../../uploads/2017/06/AdobeStock_62946430_Preview-1.jpg") !important;
+	background: url("/assets/images/AdobeStock_62946430_Preview-1.jpg") !important;
 	margin: 0 auto;
 	max-width: 1140px;
 	padding: 40px;
