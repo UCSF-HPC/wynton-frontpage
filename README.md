@@ -1,3 +1,3 @@
-# wynton-frontpage
+# Wynton Front Web Page 
 
-Just a test
+This repository hosts the [Wynton front webpage](https://wynton.ucsf.edu/) (but nothing else).
